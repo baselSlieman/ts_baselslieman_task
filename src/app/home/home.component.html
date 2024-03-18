@@ -1,0 +1,18 @@
+
+
+
+<h1 class="lbn">The last Block Number is: {{service.lastBlockNumber}}</h1>
+<hr>
+<h2 class="lbn">Enter Address to get balnace:</h2>
+<form ngForm="form" (submit)="submit()">
+    <div class="py-2">
+        <input required="required" class="form-control" [(ngModel)]="address" name="address" type="text" placeholder="example: 0x7ffc57839b00206d1ad20c69a1981b489f772031"/>
+      </div>
+      <div class="d-none d-lg-block">
+       
+      <input type="submit" value="Get Balance" class="btn" />
+    </div>
+</form>
+
+
+<h2 class="lbn">{{service.balance}}</h2>
